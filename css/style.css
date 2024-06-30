@@ -1,14 +1,40 @@
 body {
+    height: 100vh;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     text-align: center;
-    background: url(../img/background.jpg);
 }
 
-.nav-pills .nav-link.active {
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.backgroundimage {
+    background: url(../img/background.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 200px;
+    border-radius: 10px;
+}
+
+.nav-pills .nav-link:hover {
     background-color: #d3ab6e;
-
+    color: #fff; 
+    transition: background-color 0.3s ease; 
 }
+
+ .nav-pills .nav-link.active {
+    background-color: #d3ab6e;
+} 
 
 .nav-pills .nav-link {
     color: #d3ab6e;
@@ -52,4 +78,10 @@ p {
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
     -o-transform: scale(0.9);
+}
+
+.main-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
