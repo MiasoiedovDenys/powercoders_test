@@ -27,7 +27,6 @@ footer {
 }
 
 .nav-pills .nav-link:hover {
-    background-color: #d3ab6e;
     color: #fff; 
     transition: background-color 0.3s ease; 
 }
